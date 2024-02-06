@@ -1,6 +1,6 @@
-# MyApp
+# Ministry of TRUTH
 
-Welcome to MyApp! This is a simple application with both client-side and server-side components.
+Welcome to MINISTRY OF TRUTH!
 
 ## Getting Started
 
