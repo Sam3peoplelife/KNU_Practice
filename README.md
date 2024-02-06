@@ -8,7 +8,7 @@ To get started with MyApp, follow these instructions:
 
 ### Prerequisites
 
-Before running, make sure you have Node.js, MySQlk and npm installed on your machine.
+Before running, make sure you have Node.js, MySQL and npm installed on your machine.
 
 ### Installation
 
