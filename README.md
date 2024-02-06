@@ -4,7 +4,7 @@ Welcome to MINISTRY OF TRUTH!
 
 ## Getting Started
 
-To get started with MyApp, follow these instructions:
+To get started with our project, follow these instructions:
 
 ### Prerequisites
 
