@@ -78,12 +78,13 @@ npm start
 
 This will start the server application.
 
-Usage
+## Usage
 
 Once both the client-side and server-side are running, you can use it by interacting with the client application in web browser.
 
-Contributing
+## Contributing
+
 Contributions are welcome! Feel free to fork this repository and submit pull requests. Please ensure that any contributions adhere to the Code of Conduct.
 
-License
+## License
 This project is licensed under the MIT License.
