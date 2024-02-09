@@ -1,12 +1,13 @@
-$Red: #A60306;
+$Red: #a60306;
 
 .app {
   background-color: black;
   display: flex;
   justify-content: center;
   .container {
-    width: 1024px;
-    z-index:1;
+    width: 100%;
+    max-width: 1024px;
+    z-index: 1;
     .link {
       text-decoration: none;
       color: inherit;
@@ -71,7 +72,7 @@ $Red: #A60306;
     .navbar {
       background-color: black;
       .container {
-        color:white;
+        color: white;
         padding: 10px 0px;
         display: flex;
         align-items: center;
@@ -90,7 +91,7 @@ $Red: #A60306;
 
           h6 {
             font-size: 18px;
-            
+
             font-weight: 900;
           }
 
@@ -122,7 +123,6 @@ $Red: #A60306;
     //FOOTER
 
     footer {
-      
       margin-top: 100px;
       padding: 20px;
       background-color: $Red;
@@ -135,48 +135,46 @@ $Red: #A60306;
       }
     }
     // MAIN
-    .main{
+    .main {
+      color: white;
 
-      color:white;
-
-      .twophotos{
-
-        display:flex;
+      .twophotos {
+        display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 100px; 
+        gap: 100px;
 
         img {
           width: 100%;
           max-height: 400px;
         }
       }
-      
-      .redline{
+
+      .redline {
         background-color: $Red;
         text-align: center;
         align-items: center;
         justify-content: center;
-        height:10vh;
+        height: 10vh;
 
-        .images{
+        .images {
           img {
             height: 60px;
           }
         }
       }
 
-      .menu-container{
+      .menu-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-        grid-gap:1.5rem;
+        grid-gap: 1.5rem;
         align-items: center;
       }
-      .box{
+      .box {
         position: relative;
         margin-top: 4rem;
         height: auto;
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -184,19 +182,18 @@ $Red: #A60306;
         padding: 20px;
         border-radius: 0.5rem;
 
-        h2{
-          color:black;
+        h2 {
+          color: black;
         }
       }
-      .box-img{
+      .box-img {
         width: 80px;
         height: 80px;
       }
-      .box-img img{
+      .box-img img {
         width: 100%;
         height: 100%;
       }
-      
     }
 
     //HOME
@@ -204,10 +201,9 @@ $Red: #A60306;
     .home {
       margin-right: 50px;
       margin-left: 50px;
-      
 
       .posts {
-        color:white;
+        color: white;
         margin-top: 50px;
         display: flex;
         flex-direction: column;
@@ -216,9 +212,6 @@ $Red: #A60306;
         .post {
           display: flex;
           gap: 100px;
-          
-          
-          
 
           &:nth-child(2n + 1) {
             flex-direction: row-reverse;
@@ -237,7 +230,6 @@ $Red: #A60306;
               top: 20px;
               left: -20px;
               z-index: -1;
-              
             }
 
             img {
@@ -286,7 +278,7 @@ $Red: #A60306;
     .single {
       display: flex;
       gap: 50px;
-      
+
       .content {
         flex: 5;
         display: flex;
@@ -304,7 +296,7 @@ $Red: #A60306;
           align-items: center;
           gap: 10px;
           font-size: 14px;
-          color:white;
+          color: white;
           img {
             width: 50px;
             height: 50px;
@@ -336,7 +328,7 @@ $Red: #A60306;
         p {
           text-align: justify;
           line-height: 30px;
-          color:white
+          color: white;
         }
       }
       .menu {
@@ -387,10 +379,11 @@ $Red: #A60306;
     //WRITE
 
     .add {
+      height: 600px;
+      background-color: black;
       margin-top: 20px;
       display: flex;
       gap: 20px;
-      
 
       .content {
         flex: 5;
@@ -417,6 +410,7 @@ $Red: #A60306;
       }
 
       .menu {
+        
         flex: 2;
         display: flex;
         flex-direction: column;
@@ -425,34 +419,35 @@ $Red: #A60306;
         .item {
           border: 1px solid white;
           padding: 10px;
-          flex:1;
+          flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           font-size: 12px;
           color: white;
 
-          h1{
+          h1 {
             font-size: 20px;
           }
 
-          .file{
+          .file {
             text-decoration: underline;
             cursor: pointer;
           }
 
-          .buttons{
+          .buttons {
             display: flex;
             justify-content: space-between;
 
-            :first-child{
+            :first-child {
               cursor: pointer;
               color: $Red;
+              font-weight: bold;
               background-color: white;
               border: 1px solid $Red;
               padding: 3px 5px;
             }
-            :last-child{
+            :last-child {
               cursor: pointer;
               color: white;
               background-color: $Red;
@@ -460,14 +455,257 @@ $Red: #A60306;
               padding: 3px 5px;
             }
           }
-
-          .cat{
+          .cat {
+            font-weight: bold;
+            font-size: 15px;
             display: flex;
             align-items: center;
             gap: 2px;
             color: $Red;
           }
         }
+      }
+    }
+    @media screen and (min-width: 480px) {
+      .navbar {
+        .container {
+          background-color: black;
+          .logo {
+            img {
+              margin-left: 10px;
+              width: 40px;
+            }
+          }
+          .links {
+            align-items: left;
+            gap: 5px;
+            margin-right: 100px;
+            h6 {
+              align-items: left;
+              font-size: 9px;
+              font-weight: 450;
+            }
+            span {
+              font-size: 9px;
+            }
+            .write {
+              background-color: $Red;
+              width: 25px;
+              height: 25px;
+              font-weight: 150;
+            }
+          }
+        }
+      }
+      .main {
+        .twophotos {
+          display: flex;
+          gap: 30px;
+          justify-content: flex-start;
+          img {
+            align-items: right;
+            width: 60%;
+            max-width: 200px;
+          }
+        }
+        .redline {
+          height: 10vh;
+          max-width: 600px;
+          p {
+            justify-content: start;
+            font-size: 13px;
+          }
+          .images {
+            img {
+              height: 30px;
+            }
+          }
+          h6 {
+            display: flex;
+          }
+        }
+        .menu-container {
+          grid-gap: 0rem;
+          grid-template-columns: repeat(auto-fit, minmax(60px, auto));
+          .box {
+            margin-left: 1rem;
+            margin-top: 1rem;
+            font-size: 4px;
+            width: 70px;
+            height: 70px;
+            .box-img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+      footer {
+        padding: 0px;
+        font-size: 8px;
+        max-width: 600px;
+      }
+    }
+    @media screen and (min-width: 600px) {
+      .navbar {
+        .container {
+          background-color: black;
+          .logo {
+            img {
+              margin-left: 10px;
+              width: 50px;
+            }
+          }
+          .links {
+            align-items: left;
+            gap: 6px;
+            margin-right: 300px;
+            h6 {
+              align-items: left;
+              font-size: 15px;
+              font-weight: 560;
+            }
+            span {
+              font-size: 17px;
+            }
+            .write {
+              background-color: $Red;
+              width: 51px;
+              height: 51px;
+              font-weight: 187;
+            }
+          }
+        }
+      }
+      .main {
+        .twophotos {
+          display: flex;
+          gap: 30px;
+          justify-content: flex-start;
+          img {
+            align-items: right;
+            max-height: 300px;
+            max-width: 400px;
+          }
+        }
+        .redline {
+          height: 15vh;
+          max-width: 900px;
+          p {
+            justify-content: start;
+            font-size: 20px;
+          }
+          .images {
+            img {
+              height: 55px;
+            }
+          }
+          h6 {
+            display: flex;
+          }
+        }
+        .menu-container {
+          grid-gap: 0rem;
+          grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+          .box {
+            margin-left: 2rem;
+            margin-top: 1rem;
+            font-size: 8px;
+            width: 120px;
+            height: 120px;
+            .box-img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+      }
+      footer {
+        padding: 10px;
+        font-size: 8px;
+        max-width: 900px;
+        text-align: center;
+      }
+    }
+    @media screen and (min-width: 900px) {
+      .navbar {
+        .container {
+          background-color: black;
+          .logo {
+            img {
+              margin-left: 20px;
+              width: 70px;
+            }
+          }
+          .links {
+            align-items: left;
+            gap: 15px;
+            margin-right: 200px;
+            h6 {
+              align-items: left;
+              font-size: 20px;
+              font-weight: 560;
+            }
+            span {
+              font-size: 20px;
+            }
+            .write {
+              background-color: $Red;
+              width: 60px;
+              height: 60px;
+              font-weight: 200;
+            }
+          }
+        }
+      }
+      .main {
+        .twophotos {
+          display: flex;
+          gap: 30px;
+          justify-content: flex-start;
+          img {
+            align-items: right;
+            max-height: 600px;
+            max-width: 450px;
+          }
+        }
+        .redline {
+          height: 20vh;
+          max-width: 1000px;
+          p {
+            justify-content: start;
+            font-size: 28px;
+          }
+          .images {
+            img {
+              height: 75px;
+            }
+          }
+          h6 {
+            display: flex;
+          }
+        }
+        .menu-container {
+          grid-gap: 0rem;
+          grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+          .box {
+            margin-left: 3rem;
+            margin-top: 1rem;
+            font-size: 11px;
+            width: 225px;
+            height: 180px;
+            .box-img {
+              width: 50px;
+              height: 50px;
+            }
+          }
+        }
+      }
+      footer {
+        padding: 10px;
+        font-size: 8px;
+        max-width: 1920px;
+        text-align: center;
       }
     }
   }
