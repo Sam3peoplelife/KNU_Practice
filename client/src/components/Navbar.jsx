@@ -24,6 +24,9 @@ const Navbar = () => {
           <Link className="link" to="/?cat=peace">
             <h6>PEACE</h6>
           </Link>
+          <Link className="link" to="/?cat=freedom">
+            <h6>FREEDOM</h6>
+            </Link>
           <Link className="link" to="/">
             <h6>OPINIONS</h6>
           </Link>
